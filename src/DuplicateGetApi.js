@@ -20,9 +20,14 @@ useEffect(() => {
     });
 });
 
+const clickMeButton = () => {
+  
+}
+
   return (
     <div>
       <div>
+      <button onClick={clickMeButton}>Click me</button>
         {countries.map((item, id) => (
           <Table striped bordered hover>
             <thead>
