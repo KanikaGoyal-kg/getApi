@@ -21,8 +21,19 @@ useEffect(() => {
 });
 
 const clickMeButton = () => {
+  const data = { "userName": "Kanika Goyal",
+  "Email": "goyalkanu111@gmail.com",
+  "password": "123456789",
+  "confirmPassword": "123456789",
+  "contactNo": "6798765434"}
+
+  const postData = axios.post('http://localhost:3000/signup/',data).then((res) => {
+        console.log(res, "res");
+  })
   
 }
+
+
 
   return (
     <div>
